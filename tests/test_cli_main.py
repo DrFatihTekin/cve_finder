@@ -1,7 +1,5 @@
 from types import SimpleNamespace
 
-import pytest
-
 from cve_finder import cli
 
 

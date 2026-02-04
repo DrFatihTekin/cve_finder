@@ -1,5 +1,3 @@
-from datetime import datetime, timezone
-
 import pytest
 
 from cve_finder.utils import iso_date_to_nvd_range, parse_cvss, pick_english_description
