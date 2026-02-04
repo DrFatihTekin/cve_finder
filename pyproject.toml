@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "cve-finder"
+name = "cve-finder-cli"
 version = "1.0.0"
 description = "Fetch CVEs per application from NVD (CVE API 2.0)"
 readme = "README.md"
