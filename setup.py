@@ -6,13 +6,13 @@ setup(
     description="Fetch CVEs per application from NVD (CVE API 2.0)",
     author="Your Name",
     author_email="your.email@example.com",
-    py_modules=["main"],
+    packages=find_packages(exclude=("build", "dist")),
     install_requires=[
         "requests>=2.25.0",
     ],
     entry_points={
         "console_scripts": [
-            "cve-finder=main:main",
+            "cve-finder=cve_finder.cli:main",
         ],
     },
     python_requires=">=3.7",
