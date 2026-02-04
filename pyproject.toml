@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "cve-finder-cli"
-version = "1.0.0"
+version = "1.0.1"
 description = "Fetch CVEs per application from NVD (CVE API 2.0)"
 readme = "README.md"
 requires-python = ">=3.7"
