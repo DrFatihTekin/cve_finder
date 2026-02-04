@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cve-finder"
+version = "1.0.0"
+description = "Fetch CVEs per application from NVD (CVE API 2.0)"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Dr. Fatih Tekin", email = "fatih.tekin.de@gmail.com" }
+]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent"
+]
+dependencies = [
+  "requests>=2.25.0"
+]
+
+[project.urls]
+Homepage = "https://github.com/DrFatihTekin/cve_finder"
+Repository = "https://github.com/DrFatihTekin/cve_finder"
+
+[project.scripts]
+cve-finder = "cve_finder.cli:main"
+
+[tool.setuptools]
+packages = { find = { exclude = ["build", "dist"] } }
